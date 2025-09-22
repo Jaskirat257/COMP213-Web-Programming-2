@@ -1,0 +1,58 @@
+/* Root container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff;
+}
+
+/* Title styling */
+h1 {
+  color: #1e90ff;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Main container for cards */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between cards */
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Individual card styling */
+.card {
+  padding: 1rem;
+  border: 2px solid rgb(22, 161, 230);
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: left;
+}
+
+/* Sale card enhancements */
+.Card-Sale {
+  color: red;
+}
+
+.Card-Sale-Glow {
+  box-shadow: 0 0 10px 5px #61dafbaa;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 600px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
